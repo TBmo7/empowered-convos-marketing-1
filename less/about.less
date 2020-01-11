@@ -1,5 +1,5 @@
 
-
+@import "variables.less";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -73,10 +73,10 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 	//margin-left: 7%;
 	margin-top: 5%;
-	@media only screen and (min-width: 501px){
+	@media @mobile{
 		margin-top:0;
 	}
-	@media only screen and (min-width: 801px){
+	@media @tablet{
 		//flex-direction: column;
 	}
 }
@@ -157,7 +157,7 @@ nav{
 		margin-right: 5%;
 
 		i{
-				@media only screen and (min-width: 501px){
+				@media @mobile{
 				display:none;
 				}//media break, i
 			}//i
@@ -174,13 +174,13 @@ nav{
 		width:80%;
 		color:black;
 
-		@media only screen and (min-width: 501px){
+		@media @mobile{
 				display:flex;
 				justify-content: space-around;
 				width:80%;
 				}//media break, the links
 
-		@media only screen and (min-width: 801px){
+		@media @tablet{
 				margin-left: 10%;
 				margin-right: 10%;
 				}
@@ -227,15 +227,15 @@ nav{
   width:100%; //CHANGE THIS AFTER ALL ANIMATIONS ARE SET!
 	height:100%;
 
-		@media only screen and (min-width: 501px){
+		@media @mobile{
 		margin-top:50%;
 		}
 
-  	@media only screen and (min-width: 801px){
+  	@media @tablet{
       margin-top: 15%;
     }
 
-    @media only screen and (min-width: 1001px){
+    @media @desktop{
       margin-top: 5%;
     }
 
@@ -247,14 +247,9 @@ nav{
 
 
 
-		@media only screen and (min-width: 501px){
+		
 
-		}
-		@media only screen and (min-width: 801px){
-
-		}
-
-    @media only screen and (min-width: 1001px){
+    @media @desktop{
       margin-top: 0;
       //margin-right: 0;
     }
@@ -265,15 +260,10 @@ nav{
     width:10%;
 		font-size: .6em;
 		margin-top: 5%;
-		@media only screen and (min-width: 501px){
+		@media @mobile{
 			font-size: 1em;
 		}
-
-
-    @media only screen and (min-width: 1001px){
-
-
-    }
+    
   }
 }//boxTop
 .botFourth{
@@ -297,10 +287,10 @@ nav{
     height:100%;
     width: 100%;
 
-    @media only screen and (min-width: 801px){
+    @media @tablet{
       margin-top: 5%;
     }
-      @media only screen and (min-width: 1001px){
+      @media @desktop{
         margin-top: 0;
       }
 
