@@ -1,0 +1,214 @@
+
+@import "variables.less";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+html, body {
+		text-align: center;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body{
+	background-image:url("../images/background.png");
+
+
+
+
+
+.topBlock{
+	background-color: #5440C0;
+  height:150px;
+	width: 100%;
+
+
+
+
+nav{
+
+.topnav{
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+		padding-top: 15px;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		i{
+				@media @mobile{
+				display:none;
+				}//media break, i
+			}//i
+
+
+.icon{
+		position: absolute;
+		right:0;
+			}//logo
+#theLinks{
+		display:none;
+		justify-content: space-around;
+		width:80%;
+		color:black;
+
+		@media @mobile{
+				display:flex;
+				justify-content: space-around;
+				width:80%;
+				}//media break, the links
+
+		@media @tablet{
+				margin-left: 10%;
+				margin-right: 10%;
+				}
+					:hover{
+							color:#C2FFE9;
+								}//hover
+				}//thelinks
+
+  	a{
+			text-decoration: none;
+				:hover{
+						background-color: #5440C0;
+  								//color: #5440C0;
+						color:#C2FFE9;
+							}
+							flex-wrap: wrap;
+            	color:white;
+                	//justify-content: space-evenly;
+									//padding-right:5%;
+									//padding-left:5%;
+
+        }//a
+    }//topnav
+}//nav
+}//topblock
+.home{
+  display:flex;
+  flex-direction: column;
+.formContainer {
+    border-radius: 5px;
+    background-color: #ccffee;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+}
+
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+input[type=text], select, textarea {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=submit] {
+  background-color: #5440C0;
+  color: #C2FFE9;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color:#C2FFE9;
+  color: #5440C0;
+}
+.botBlock{
+
+
+    margin-top: 20%;
+		background-color: #5440C0;
+
+    width: 100%;
+
+    @media only screen and (min-width: 801px){
+      margin-top: 5%;
+    }
+      @media only screen and (min-width: 1001px){
+        margin-top: 0;
+      }
+
+
+.copyContent{
+		color:#C2FFE9;
+	}//copycontent
+	a{
+		text-decoration: none;
+		color:lightgray;
+	}
+
+}//botBlock
+
+}//body
